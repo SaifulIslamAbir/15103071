@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace MyWinApp
 {
-    public partial class HomeForm : Form
+    public partial class PersonalInformation : Form
     {
-        public HomeForm()
+        public PersonalInformation()
         {
             InitializeComponent();
         }
 
-        private void HomeForm_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void ShowButton_Click(object sender, EventArgs e)
+        private void ShowNameButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hi, Saiful");
+            MessageBox.Show("Name: "+firstNameTextBox.Text +" "+LastNameTextBox.Text);
+            
         }
     }
 }
